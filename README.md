@@ -5,7 +5,7 @@ A new way to write express applications
 
 ## Installation
 
-```
+```bash
 npm install xprsso
 ```
 
@@ -15,7 +15,7 @@ Xprsso is built with GraphQL and Express.
 It aims to improve productivity and bring
 rapid prototyping to your Express middleware.
 
-```
+```javascript
 var express = require("express");
 var Xprsso = require("xprsso");
 
@@ -25,7 +25,7 @@ var x = new Xprsso;
 
 In Xprsso, you can think of middlware as ```tasks```
 
-```
+```javascript
 //Tasks cannot be anonymous. They must be named function expressions.
 
 x.addTask(function sendOK(request, response){
@@ -34,10 +34,7 @@ x.addTask(function sendOK(request, response){
 ```
 
 Now that you have added a task you can set that to a path.
-
-```
-// Make sure to pass in your express application.
-x.set(app, `
+```GraphQL
 {
 
     # This is a comment. Only single line comments are supported.
@@ -62,11 +59,15 @@ x.set(app, `
     }
 
 }
-`)
+```
+
+```javascript
+// Make sure to pass in your express application.
+x.set(app, Xprsso.fromFile(pathToFile))
 ```
 Xpresso emits ```"ready"``` when its finished.
 
-```
+```javascript
 x.once("ready", function onRdy(){
     app.listen(8000);
 })
@@ -83,7 +84,7 @@ x.once("ready", function onRdy(){
 ```@param``` ending in a colon ```:```
 
 
-```
+```GraphQL
  {
      /api/:user_id {
          
@@ -99,10 +100,10 @@ x.once("ready", function onRdy(){
      }
  }
 ```
-You  can specify multiple param middlware to be used with the ```->``` syntax.
+You  can specify multiple param middlware to be used, with the ```->``` syntax.
 Make sure they call next or it will hang your application.
 
-```
+```GraphQL
 {
     /api/:user_id {
 
