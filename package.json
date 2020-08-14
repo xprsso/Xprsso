@@ -1,0 +1,23 @@
+{
+  "name": "expression",
+  "version": "1.0.0",
+  "description": "A new way of expressing your express application",
+  "main": "index.js",
+  "scripts": {
+    "test": "."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xprsso/Xprsso"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "Danny Vidal",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "graphql": "^15.3.0"
+  },
+  "devDependencies": {}
+}
