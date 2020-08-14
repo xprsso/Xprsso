@@ -64,6 +64,13 @@ x.set(app, `
 }
 `)
 ```
+Xpresso emits ```"ready"``` when its finished.
+
+```
+x.once("ready", function onRdy(){
+    app.listen(8000);
+})
+```
 
 ## Using @descriptors
 
@@ -93,7 +100,7 @@ x.set(app, `
  }
 ```
 You  can specify multiple param middlware to be used with the ```->``` syntax.
-Make sure they call next or it will hang you application.
+Make sure they call next or it will hang your application.
 
 ```
 {
