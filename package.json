@@ -1,7 +1,7 @@
 {
-  "name": "expression",
+  "name": "xprsso",
   "version": "1.0.0",
-  "description": "A new way of expressing your express application",
+  "description": "A new way of writing your express application",
   "main": "index.js",
   "scripts": {
     "test": "."
