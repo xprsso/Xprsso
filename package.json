@@ -4,7 +4,7 @@
   "description": "A new way of writing your express application",
   "main": "index.js",
   "scripts": {
-    "test": "."
+    "test": "mocha ./tests/**.spec.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,8 @@
     "graphql": "^15.3.0"
   },
   "devDependencies": {
-    "debug": "^4.1.1"
+    "chai": "^4.2.0",
+    "debug": "^4.1.1",
+    "mocha": "^8.1.1"
   }
 }
