@@ -62,7 +62,7 @@ Now that you have added a task you can set that to a path.
 }
 ```
 
-xprsso try to resolve the second argument as a file path for a query but if it does not exist uses the argument itself as query.
+xprsso tries to resolve the second argument as a file path for a query but if it does not exist it uses the argument itself as query.
 ```javascript
 // Make sure to pass in your express application.
 x.set(app, "path to query or query")
@@ -212,7 +212,7 @@ Make sure they call next or it will hang your application.
 ```
 ### @all
 ```@all``` is the use of Express's ```app.all(value, ...[args])``` where ```value``` is the text after 
-```@all ending in a colon ```:``` and args will be the text after the colon ```:``` any number of tasks can be used
+```@all``` ending in a colon ```:``` and args will be the text after the colon ```:``` any number of tasks can be used
 
 ```GraphQL
 {
