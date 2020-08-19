@@ -227,7 +227,7 @@ Make sure they call next or it will hang your application.
 }
 ```
 
-## Adding your own descripto hooks
+## Adding your own descriptor hooks
 You can add a descriptor hook(s) to use within the query.
 Hooks should be regular functions xprsso throws when it detects
 that a es6 arrow function was used.
