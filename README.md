@@ -83,7 +83,7 @@ x.once("ready", function onRdy(){
 ### built in middleware
 xprsso has ```@descriptor``` hooks provided already for Express's built in middleware
 
-The Schema
+The syntax
 ```
 @foo; 
 ```
