@@ -1,6 +1,6 @@
 {
   "name": "xprsso",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "A new way of writing your express application",
   "main": "index.js",
   "scripts": {
