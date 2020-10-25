@@ -67,7 +67,7 @@ xprsso tries to resolve the second argument as a file path for a query but if it
 // Make sure to pass in your express application.
 x.set(app, "path to query or query")
 ```
-Xpresso emits ```"ready"``` when its finished.
+xprsso emits ```"ready"``` when its finished.
 
 ```javascript
 x.once("ready", function onRdy(){
